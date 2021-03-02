@@ -1,5 +1,9 @@
 "use strict"
 
+const moduleProto = {
+    protoKey: "test"
+};
+
 const module = {
     a:1,
     b:2,
@@ -7,10 +11,19 @@ const module = {
     d:4
 };
 
+Object.setPrototypeOf(module, moduleProto);
+
 const lesson = object => {
-    for(let key in module){
-        console.log(key)
+    for(let key in object){
+        if (object.hasOwnProperty(key)) {
+            console.log(`${key} - ${object[key]}`);
+        }
     }
     
 }
 lesson(module);
+
+// Задание выполнено неверно, есть несколько ошибок:
+// 1. По условию нужно было выводить и ключи, и значения, причем только собственных свойств. У вас выводятся только ключи и нет проверки на то, является свойство собственным или нет.
+// 2. Функция lesson принимает в качестве аргумента параметр object, но никак его не использует. Цикл внутри функции завязан на работу с переменной module, что неверно, потому что в таком случае эту функцию нельзя использовать для работы с другими объектами
+// Всё перечисленное выше исправила в коде
