@@ -1,0 +1,36 @@
+table {
+          
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 1em;
+    }
+  td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid #56433D;
+    border-bottom: 2px solid #56433D;
+    border-right: 2px solid #56433D;
+    border-left: 2px solid #56433D;
+    width: 50px;
+    height: 50px;
+    }
+
+  tr:first-child {
+    font-weight: bold;
+    font-size: 14px;
+    }
+
+  tr:second-child {
+    
+    font-size: 14px;
+    }
+
+  select {
+     margin: 1em;
+  }
+  .block {
+    display: inline;
+  }
