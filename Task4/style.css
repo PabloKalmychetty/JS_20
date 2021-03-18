@@ -1,0 +1,31 @@
+.btn {
+  display: flex;
+  margin: 15px 55px;
+  padding: 25px 15px;
+  font-size: 23px;
+  color: white;
+  background:green;
+}
+
+.par {
+  margin: 10px 60px;
+  padding: 10px 55px;
+  font-weight: bold;
+  color: rgb(6, 128, 16);
+}
+
+.Timezone{
+  margin: 00px 50px;
+  padding: 00px 150px;
+  font-weight: bold;
+  color: rgb(235, 146, 21);
+
+}
+
+.localDateTime {
+  margin: 00px 50px;
+  padding: 00px 150px;
+  font-weight: bold;
+  color: rgb(235, 146, 21);
+
+}
