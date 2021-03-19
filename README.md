@@ -1,0 +1,1 @@
+js examples for last learning
